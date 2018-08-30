@@ -24,6 +24,7 @@ class HomeController extends Controller
     public function index()
     {
         $data = "judul_buku_wkkw";
-        return view('detail',compact('data'));
+        return view('view',compact('data'));
+        // return view('');
     }
 }
