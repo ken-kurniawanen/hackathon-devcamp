@@ -31,4 +31,5 @@ class User extends Authenticatable
     public function getSubscription(){
         return $this->hasOne(Subscription::class);
     }
+
 }

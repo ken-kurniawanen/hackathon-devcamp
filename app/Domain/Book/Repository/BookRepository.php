@@ -10,6 +10,7 @@ namespace App\Domain\Book\Repository;
 
 
 use App\Domain\Book\Entity\Book;
+use Illuminate\Support\Facades\Auth;
 
 class BookRepository
 {
@@ -19,11 +20,16 @@ class BookRepository
         return $books;
     }
 
-    public function readOneById(int $id)
+    public function readOneByBookId(int $id)
     {
         $book = Book::find($id);
+        $user = Auth::user();
+        
         return $book;
     }
+
+
+    
 
     
 
