@@ -17,7 +17,7 @@
                             <h5><b>Judul Bukunya</b></h5>
                             <h6><b>Categori I</b></h6>
                             <h6>PT Kompus<h6>
-                            <span><button class="btn btn-success">baca</button><button class="btn btn-danger">hapus</button></span>
+                            <span><button class="btn btn-success">tambah</button><button class="btn btn-primary">detail</button></span>
                         </div>
                     </div>                
                 @endfor
