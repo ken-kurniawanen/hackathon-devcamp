@@ -15,6 +15,7 @@
                     @endif
 
                     You are logged in!
+                    Hi {{$data}}
                 </div>
             </div>
         </div>
