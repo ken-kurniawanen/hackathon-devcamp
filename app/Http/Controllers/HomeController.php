@@ -28,6 +28,7 @@ class HomeController extends Controller
         BookRepository $repoBook
     )
     {
+
         $data_buku =  $repo->readUserBook();
         // $buku = $repoBook->readOneByBookId(1);
         // dd($buku);
@@ -39,5 +40,6 @@ class HomeController extends Controller
         }
         dd($book);
         return view('home',compact('book'));
+
     }
 }
