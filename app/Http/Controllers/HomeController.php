@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Domain\Book\Repository\BookRepository;
 use Illuminate\Http\Request;
 
 class HomeController extends Controller
@@ -21,9 +22,11 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index()
+    public function index(
+        BookRepository $repo
+    )
     {
-        $data = "hai";
+        $data = $repo->readAll();
         return view('home',compact('data'));
     }
 }
