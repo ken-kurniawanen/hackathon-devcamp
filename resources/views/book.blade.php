@@ -10,17 +10,17 @@
                 </div>
                 <div style="height:10px"></div>
                 <div class="row">
-                @for($i=0;$i<12;$i++)
+                @foreach($books as $book)
                     <div class="col-md-3">
                         <div>
-                            <img style="width:200px" src={{ asset('images/buku.jpg') }}>
-                            <h5><b>Judul Bukunya</b></h5>
-                            <h6><b>Categori I</b></h6>
-                            <h6>PT Kompus<h6>
-                            <span><button class="btn btn-success">tambah</button><button class="btn btn-primary">detail</button></span>
+                            <a href="{{route('onebook',['id'=>$book])}}"><img style="width:200px" src={{ asset('images/buku.jpg') }}></a>
+                            <h5><b>{{$book->title}}</b></h5>
+                            <h6><b>Categori {{$book->category_id}}</b></h6>
+                            <h6>{{$book->publisher_id}}<h6>
+                            <span><button class="btn btn-success">tambah</button><a href="{{route('onebook',['id'=>$book])}}"><button class="btn btn-primary">detail</button></a></span>
                         </div>
                     </div>                
-                @endfor
+                @endforeach
                 </div>
                 <div class="card-body">
                     <div style="">

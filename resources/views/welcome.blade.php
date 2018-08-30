@@ -6,7 +6,7 @@
     <!--- basic page needs
     ================================================== -->
     <meta charset="utf-8">
-    <title>Sublime</title>
+    <title>MulaiBaca</title>
     <meta name="description" content="">
     <meta name="author" content="">
 
@@ -19,6 +19,8 @@
     <link rel="stylesheet" href={{ URL::asset('css/base.css') }}>
     <link rel="stylesheet" href={{ URL::asset('css/vendor.css') }}>
     <link rel="stylesheet" href={{ URL::asset('css/main.css') }}>
+    <link rel="stylesheet" href={{ URL::asset('css/style.css') }}>
+
 
     <!-- script
     ================================================== -->
@@ -50,7 +52,7 @@
 
         <div class="header-logo">
             <a class="site-logo" href="index.html">
-                <img src="images/logo.svg" alt="Homepage">
+                Home<!-- <img src={{ asset('images/logo.png') }} alt="Homepage"> -->
             </a>
         </div> <!-- end header-logo -->
 
@@ -76,25 +78,8 @@
                     @endif
                 </ul>
     
-                <p>Perspiciatis hic praesentium nesciunt. Et neque a dolorum <a href='#0'>voluptatem</a> porro iusto sequi veritatis libero enim. Iusto id suscipit veritatis neque reprehenderit.</p>
     
-                <ul class="header-nav__social">
-                    <li>
-                        <a href="#0"><i class="fab fa-facebook"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-twitter"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-instagram"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-behance"></i></a>
-                    </li>
-                    <li>
-                        <a href="#0"><i class="fab fa-dribbble"></i></a>
-                    </li>
-                </ul>
+    
 
             </div> <!-- end header-nav__content -->
 
@@ -120,26 +105,19 @@
             <div class="row home-content__main">
 
                 <h1>
-                Sublime
+                MulaiBaca
                 </h1>
 
                 <h3>
-                We build brands and beautiful experiences
+                Democratize book through technology
                 </h3>
-
-                <div class="home-content__video">
-                    <a class="video-link" href="https://player.vimeo.com/video/117310401?color=01aef0&title=0&byline=0&portrait=0" data-lity>
-                        <span class="video-icon"></span>
-                        <span class="video-text">Watch Video</span>
-                    </a>
-                </div>
 
                 <div class="home-content__button">
                     <a href="#about" class="smoothscroll btn btn--primary btn--large">
-                        More About Us
+                        About
                     </a>
-                    <a href="#contact" class="smoothscroll btn btn--large">
-                        Let's Talk
+                    <a href="#pricePlans" class="smoothscroll btn btn--large">
+                        Pricing
                     </a>
                 </div>
 
@@ -153,23 +131,6 @@
 
         </div> <!-- end home-content -->
 
-        <ul class="home-social">
-            <li>
-                <a href="#0"><i class="fab fa-facebook-f" aria-hidden="true"></i><span>Facebook</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-twitter" aria-hidden="true"></i><span>Twiiter</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-instagram" aria-hidden="true"></i><span>Instagram</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-behance" aria-hidden="true"></i><span>Behance</span></a>
-            </li>
-            <li>
-                <a href="#0"><i class="fab fa-dribbble" aria-hidden="true"></i><span>Dribbble</span></a>
-            </li>
-        </ul> <!-- end home-social -->
 
     </section> <!-- end s-home -->
 
@@ -180,10 +141,9 @@
 
         <div class="row section-header bit-narrow" data-aos="fade-up">
             <div class="col-full">
-                <h3 class="subhead">Who We Are</h3>
+                <h3 class="subhead">About MulaiBaca</h3>
                 <h1 class="display-1">
-                We are Sublime, a design and branding agency with partners worldwide. We design thoughtful digital experiences
-                and beautiful brand aesthetics.
+                
                 </h1>
             </div>
         </div> <!-- end section-header -->
@@ -191,8 +151,8 @@
         <div class="row bit-narrow" data-aos="fade-up">
             <div class="col-full">
                 <p class="lead">
-                Curabitur arcu erat, accumsan id imperdiet et, porttitor at sem. Donec rutrum congue leo eget malesuada. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse. 
-                </p>
+
+            </p>
             </div>
         </div> <!-- end about-desc -->
 
@@ -246,99 +206,79 @@
 
     <!-- services
     ================================================== -->
-    <section id='services' class="s-services target-section darker">
+    <section id="pricePlans">
 
-        <div class="row section-header bit-narrow" data-aos="fade-up">
-            <div class="col-full">
-                <h3 class="subhead">What we do</h3>
-                <h1 class="display-1">
-                We take pride in what we do. Our services are designed to help 
-                your business stand out and turn your ideas into digital realities.
-                </h1>
-            </div>
-        </div> <!-- end section-header -->
 
-        <div class="row bit-narrow services block-1-2 block-tab-full">
+        <ul id="plans">
+			<li class="plan">
+				<ul class="planContainer">
+					<li class="title"><h2>Plan 1</h2></li>
+					<li class="price"><p>$10/<span>month</span></p></li>
+					<li>
+						<ul class="options">
+							<li>2x <span>option 1</span></li>
+							<li>Free <span>option 2</span></li>
+							<li>Unlimited <span>option 3</span></li>
+							<li>Unlimited <span>option 4</span></li>
+							<li>1x <span>option 5</span></li>
+						</ul>
+					</li>
+					<li class="button"><a href="#">Purchase</a></li>
+				</ul>
+			</li>
 
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-star"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Brand Identity</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
+			<li class="plan">
+				<ul class="planContainer">
+					<li class="title"><h2 class="bestPlanTitle">Plan 2</h2></li>
+					<li class="price"><p class="bestPlanPrice">$20/month</p></li>
+					<li>
+						<ul class="options">
+							<li>2x <span>option 1</span></li>
+							<li>Free <span>option 2</span></li>
+							<li>Unlimited <span>option 3</span></li>
+							<li>Unlimited <span>option 4</span></li>
+							<li>1x <span>option 5</span></li>
+						</ul>
+					</li>
+					<li class="button"><a class="bestPlanButton" href="#">Purchase</a></li>
+				</ul>
+			</li>
 
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-group"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Illustration</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
+			<li class="plan">
+				<ul class="planContainer">
+					<li class="title"><h2>Plan 3</h2></li>
+					<li class="price"><p>$30/<span>month</span></p></li>
+					<li>
+						<ul class="options">
+							<li>2x <span>option 1</span></li>
+							<li>Free <span>option 2</span></li>
+							<li>Unlimited <span>option 3</span></li>
+							<li>Unlimited <span>option 4</span></li>
+							<li>1x <span>option 5</span></li>
+						</ul>
+					</li>
+					<li class="button"><a href="#">Purchase</a></li>
+				</ul>
+			</li>
 
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-pie-chart"></i>
-                </div>  
-                <div class="item-service__text">
-                    <h3 class="item-title">Marketing</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-image"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Photography</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon">
-                    <i class="icon-cube"></i>
-                </div>
-                <div class="item-service__text">
-                    <h3 class="item-title">UI/UX Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-    
-            <div class="col-block item-service" data-aos="fade-up">
-                <div class="item-service__icon"><i class="icon-lego-block"></i></div>
-                <div class="item-service__text">
-                    <h3 class="item-title">Frontend Design</h3>
-                    <p>Nemo cupiditate ab quibusdam quaerat impedit magni. Earum suscipit ipsum laudantium. 
-                    Quo delectus est. Maiores voluptas ab sit natus veritatis ut. Debitis nulla cumque veritatis.
-                    Sunt suscipit voluptas ipsa in tempora esse soluta sint.
-                    </p>
-                </div>
-            </div>
-
-        </div> <!-- end services -->
-
-    </section> <!-- end s-services -->
+			<li class="plan">
+				<ul class="planContainer">
+					<li class="title"><h2>Plan 4</h2></li>
+					<li class="price"><p>$40/<span>month</span></p></li>
+					<li>
+						<ul class="options">
+							<li>2x <span>option 1</span></li>
+							<li>Free <span>option 2</span></li>
+							<li>Unlimited <span>option 3</span></li>
+							<li>Unlimited <span>option 4</span></li>
+							<li>1x <span>option 5</span></li>
+						</ul>
+					</li>
+					<li class="button"><a href="#">Purchase</a></li>
+				</ul>
+			</li>
+		</ul> <!-- End ul#plans -->
+        </section>
 
 
     <!-- footer
@@ -402,9 +342,10 @@
     ================================================== -->
     <link rel="stylesheet" href={{ URL::asset('css/base.css') }}>
     <script type="text/javascript" src={{ URL::asset('js/jquery-3.2.1.min.js') }}></script>
-    {{ URL::asset('js/jquery.js') }}
+    <!-- {{ URL::asset('js/jquery.js') }} -->
     <script type="text/javascript" src={{ URL::asset('js/plugins.js') }}></script>
     <script type="text/javascript" src={{ URL::asset('js/main.js') }}></script>
 
 </body>
 </html>
+

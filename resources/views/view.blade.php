@@ -14,7 +14,12 @@
 	</style>
 </head>
 <body>
-	<object class="" data="{{ URL::asset('pdf/presentasi Seera hijab.pdf')}}" type="application/pdf" width="100%" height="100%">
+	<?php 
+		// $link = "URL::asset('pdf/".$book->path."')";
+		$link = "http://localhost:8000/pdf/".$book->path;		
+	?>
+
+	<object class="" data="<?php echo $link?>" type="application/pdf" width="100%" height="100%">
   	</object>
   		
 </body>

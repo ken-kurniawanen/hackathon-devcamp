@@ -19,7 +19,7 @@ class UserListBookRepository
     public function readUserBook(){
         $status = 1;
         $id = Auth::user()->id;
-        $userlistbook = UserListBook::where('status',1)->where('user_id',$id)->get();
+        $userlistbook = UserListBook::where('status',$status)->where('user_id',$id)->get();
         return $userlistbook;
     }
 }
