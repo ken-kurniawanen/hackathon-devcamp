@@ -17,7 +17,6 @@ class BookSeeder extends \Illuminate\Database\Seeder
 
     public function __construct()
     {
-        parent::__construct();
         $this->faker = Faker\Factory::create();
         $categories = Category::all();
         $publishers = Publisher::all();

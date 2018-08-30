@@ -6,7 +6,6 @@ class CategorySeeder extends \Illuminate\Database\Seeder
 {
     public function __construct()
     {
-        parent::__construct();
         $this->faker = Faker\Factory::create();
     }
 

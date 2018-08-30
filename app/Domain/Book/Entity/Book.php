@@ -9,7 +9,7 @@ class Book extends Model
 {
     public function category()
     {
-        return $this->hasMany(Category::class);
+        return $this->hasMany(BookCategory::class);
     }
 
     public function publisher()

@@ -8,9 +8,9 @@ class DevSeeder extends \Illuminate\Database\Seeder
 {
     public function run()
     {
-        $this->call(Category::class);
-        $this->call(Publisher::class);
-        $this->call(BookSeeder::class);
+        $this->call(CategorySeeder::class);
+        $this->call(PublisherSeeder::class);
+        $this->call(BookSeederSeeder::class);
 
     }
 }
