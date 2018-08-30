@@ -2,7 +2,6 @@
 
 namespace App\Domain\User\Entity;
 
-use App\Domain\Subscription\Entity\Subscription;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 
@@ -27,8 +26,4 @@ class User extends Authenticatable
     protected $hidden = [
         'password', 'remember_token',
     ];
-
-    public function getSubscription(){
-        return $this->hasOne(Subscription::class);
-    }
 }
