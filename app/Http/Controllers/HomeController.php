@@ -22,11 +22,9 @@ class HomeController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function index(
-        BookRepository $repo
-    )
+    public function index()
     {
-        $data = $repo->readAll();
+        $data = "hai";
         return view('home',compact('data'));
     }
 }
