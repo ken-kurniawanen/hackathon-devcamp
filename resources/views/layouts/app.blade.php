@@ -39,6 +39,11 @@
 
                     <!-- Right Side Of Navbar -->
                     <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a href="{{route('allbook')}}">
+                                <input class="nav-link" type="text" style="border:0" placeholder="Search">
+                            </a>
+                        </li>
                         <!-- Authentication Links -->
                         @guest
                             <li class="nav-item">
